@@ -7,15 +7,15 @@ package Aval_1;
 
 /**
  *
- * @author Rafa
+ * @author Ilvini Pitter
  */
+import java.util.Scanner;
 public class JavaApplication6 {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Scanner leia = new Scanner(System.in);
+        
     }
     
 }
