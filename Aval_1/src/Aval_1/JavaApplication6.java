@@ -1,13 +1,16 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Federal University of Pará - UFPA
+ * Institute of Technology - ITEC
+ * Faculty of Computer Engineering and Telecommunications - FCT
+ * Data Structure
+ * Teacher: Thiago Sylas
  */
 package Aval_1;
 
 /**
- *
- * @author Ilvini Pitter
+ * Students:
+ * Ilvini Pitter Nunes Batista - 201606840089
+ * Janilson
  */
 import java.util.Scanner;
 public class JavaApplication6 {
