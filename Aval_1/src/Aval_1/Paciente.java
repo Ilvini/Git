@@ -55,7 +55,7 @@ public class Paciente extends Pessoa{
             switch (status) {
                 case "Muito Grave":
                     return 6;
-                case "Grave":
+                case "Mal":
                     return 5;
                 default:
                     return 4;
@@ -64,7 +64,7 @@ public class Paciente extends Pessoa{
             switch (status) {
                 case "Muito Grave":
                     return 3;
-                case "Grave":
+                case "Mal":
                     return 2;
                 default:
                     return 1;
@@ -72,11 +72,4 @@ public class Paciente extends Pessoa{
         }
     }
     
-    public boolean verificarConsulta(String especialidMedico, int nc){
-        if(consultas[nc].equals(especialidMedico)){
-            return true;
-        } else {
-            return false;
-        }
-    }
 }

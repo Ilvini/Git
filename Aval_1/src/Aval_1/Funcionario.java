@@ -2,13 +2,13 @@
 package Aval_1;
 
 
-public class Funcionario extends Pessoa{
+public abstract class Funcionario extends Pessoa{
     
     private int horasMes;
     private double salarioHora;
-    private double salario;
-    private boolean status;
-    private int nConsultas;
+    double salario;
+    private String cargo;
+    private String status; //Férias, Licença ou Disponivel.
     
     public int getHorasMes(){
         return horasMes;
@@ -34,24 +34,27 @@ public class Funcionario extends Pessoa{
         this.salario = salario;
     }
     
-    public boolean getStatus(){
+    public String getStatus(){
         return status;
     }
     
-    public void setStatus(boolean status){
+    public void setStatus(String status){
         this.status = status;
     }
     
-    public String getSetor(){
-        return setor;
+    public boolean verificarStatus(){
+        if(status.equals("Disponivel")){
+            return true;
+        } else {
+            return false;
+        }
     }
     
-    public void setSetor(String setor){
-        this.setor = setor;
-    }
-    
-    public double calculoSalario(){
+    public void calculoSalario(){
         salario = horasMes*salarioHora;
-        return salario;
     }
+
+    public abstract boolean verificarConsulta(String tipoConsulta);
+    
+    public abstract boolean verificarCirurgia(String tipoCirurgia);
 }
